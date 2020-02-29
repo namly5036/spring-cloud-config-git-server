@@ -21,4 +21,4 @@ management:
 logging:
    level:
       com.example.student: DEBUG
-test: test123      
+test: test1234
