@@ -1,3 +1,7 @@
+spring:
+   application:
+      name: school-service    #current service name to be used by the eureka server
+
 eureka:    #tells about the Eureka server details and its refresh time
    instance:
       leaseRenewalIntervalInSeconds: 1
@@ -9,16 +13,13 @@ eureka:    #tells about the Eureka server details and its refresh time
          enabled: true
       lease:
          duration: 5
-         
-spring:
-   application:
-      name: school-service    #current service name to be used by the eureka server
-      
+            
 management:
    security:
       enabled: false    #disable the spring security on the management endpoints like /env, /refresh etc. 
       
 logging:
    level:
-      com.example.student: DEBUG
+      com.example.school: DEBUG
+      
 test: test1234
